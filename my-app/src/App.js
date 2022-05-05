@@ -3,6 +3,7 @@ import React,{useState, useEffect} from 'react'
 
 
 //Haetaan data local storagesta
+//21:13
 
 const getDatafromLS=()=>{
   const data = localStorage.getItem('tuotteet');
