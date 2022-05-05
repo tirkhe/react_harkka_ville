@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+      <h1>Tuotevarasto</h1>
+      <p>Lisää ja katso tuoteitta varastossa</p>
+      <div className='main'>
+
+        <div className='form-container'>
+          <form autoComplete="off" className='form-group'>
+
+            <label>Tuotenimi</label>
+            <input type="text" className='form-control' required></input>
+            <br></br>
+            <label>Tuotekuvaus</label>
+            <input type="text" className='form-control' required></input>
+            <br></br>
+            <label>Tuote-ID</label>
+            <input type="text" className='form-control' required></input>
+            <br></br>
+            <button type="submit" className='btn btn-success btn-md'> Lisää</button>
+          </form>
+
+        </div>
+
+        <div className='view-container'>
+
+
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
